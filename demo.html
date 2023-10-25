@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHPANDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/demo.css">
+    <link rel="stylesheet" href="./assets/css/demo2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <header class="header">
+        <div class="grid__full-with">
+            <nav class="header_navbar">
+                <ul class="header_navbar-list">
+                    <li class="header_navbar-item">
+                        <a href="">
+                         <img class="header_navbar-item--img" src="./assets/img/logo.png" alt="HHKungFu">
+                        </a> 
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="" class="header_navbar-item--home">Trang Chủ</a>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="" class="header_navbar-item--HH3D">HH 3D Trung Quốc</a>
+                    </li>
+                    <li class="header_navbar-item header_navbar-item--genre-menu">
+                           <a href=""class="header_navbar-item--genre ">Thể Loại</a> 
+                           <div class="header_genre">
+                        <div class="header_genre--menu">
+                            <ul class="header_genre--list">
+                                <li class="header_genre--item">
+                                    <a href="">Anime</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Harem</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Học Đường</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Thám Tử</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Kinh Dị</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Viễn Tưởng</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Xuyên Không</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Dị Giới</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Khoa Huyễn</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Drama</a>
+                                </li>
+                            </ul>
+                            <ul class="header_genre--list">
+                                <li class="header_genre--item">
+                                    <a href="">Hành Động</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Bí Ẩn</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Đời Thường</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Lịch Sử</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Ma Cà Rồng</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Trùng Sinh</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Hài Hước</a>
+                                </li>
+                            </ul>
+                            <ul class="header_genre--list">
+                                <li class="header_genre--item">
+                                    <a href=""> Bi Kịch</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href=""> Võ Thuật </a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href=""> Siêu Năng Lực</a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href=""> Mecha </a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Siêu Nhiên </a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href="">Tiên Hiệp </a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href=""> Huyền Ảo </a>
+                                </li>
+                                <li class="header_genre--item">
+                                    <a href=""> Đam Mỹ </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="" class="header_navbar-item--showtimes">Lịch Chiếu</a>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="" class="header_navbar-item--new">Mới Cập Nhật</a>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="" class="header_navbar-item--complete">Hoàn Thành</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr class="navbar_border" width="100%" size="0.5rem" align="center" color="white" />
+            <div class="header-with-search">
+                <ul class="header-search">
+                <li class="header-search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li class="header-search-box">
+                    <input type="text" class="header-search-box--input" placeholder="Tìm Kiếm Từ Khóa">
+                </li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="gird">
+            <div class="grid__row container__row">
+                <div class="grid__colum-1">
+
+                </div>
+                <div class="grid__colum-10 container__product">
+                    <div class="select-filter">
+                        <div class="select-filter--input select-directory select-directory--menu">
+                            <span class="select-input__label">Danh Mục</span>
+                            <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                            <div class="select__menu">
+                                <ul class="select__list">
+                                    <li class="select__item">
+                                        --Danh Mục--
+                                    </li>
+                                    <li class="select__item">
+                                        Anime
+                                    </li>
+                                    <li class="select__item">
+                                        Hành Động
+                                    </li>
+                                    <li class="select__item">
+                                        Hài Hước
+                                    </li>
+                                    <li class="select__item">
+                                        Tình Cảm
+                                    </li>
+                                    <li class="select__item">
+                                        Harem
+                                    </li>
+                                    <li class="select__item">
+                                        Bí Ẩn
+                                    </li>
+                                    <li class="select__item">
+                                        Bi Kịch
+                                    </li>   
+                                    <li class="select__item">
+                                        Giả Tưởng
+                                    </li>
+                                    <li class="select__item">
+                                        Học Đường
+                                    </li>
+                                    <li class="select__item">
+                                        Võ Thuật
+                                    </li>
+                                    <li class="select__item">
+                                        Trò Chơi
+                                    </li>
+                                    <li class="select__item">
+                                        Thám Tử
+                                    </li>
+                                    <li class="select__item">
+                                        Lịch Sử
+                                    </li>   
+                                    <li class="select__item">
+                                        Siêu Năng Lực
+                                    </li>
+                                    <li class="select__item">
+                                        Quân Đội
+                                    </li>
+                                    <li class="select__item">
+                                        Drama
+                                    </li>
+                                    <li class="select__item">
+                                        Siêu Nhiên
+                                    </li>
+                                    <li class="select__item">
+                                        Phiêu Lưu
+                                    </li>
+                                    <li class="select__item">
+                                        Kinh Dị
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-filter--input select-year select-year--menu">
+                             <span class="select-input__label">Năm Sản Xuất</span>
+                            <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                            <div class="select__menu">
+                                <ul class="select__list">
+                                    <li class="select__item">
+                                        --Năm Sản Xuất--
+                                    </li>
+                                    <li class="select__item">
+                                        2022
+                                    </li>
+                                    <li class="select__item">
+                                        2021
+                                    </li>
+                                    <li class="select__item">
+                                        2020
+                                    </li>
+                                    <li class="select__item">
+                                        2019
+                                    </li>
+                                    <li class="select__item">
+                                        2018
+                                    </li>
+                                    <li class="select__item">
+                                        2017
+                                    </li>
+                                    <li class="select__item">
+                                        2016
+                                    </li>
+                                    <li class="select__item">
+                                        2015
+                                    </li>
+                                    <li class="select__item">
+                                        2014
+                                    </li>
+                                    <li class="select__item">
+                                        2013
+                                    </li>
+                                    <li class="select__item">
+                                        2012
+                                    </li>
+                                    <li class="select__item">
+                                        2011
+                                    </li>
+                                    <li class="select__item">
+                                        2010
+                                    </li>
+                                    <li class="select__item">
+                                        2009
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-filter--input select-sort select-sort--menu">
+                            <span class="select-input__label">Sắp Xếp</span>
+                            <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                            <div class="select__menu">
+                                <ul class="select__list select__list--sort">
+                                    <li class="select__item">
+                                        --Sắp Xếp Theo--
+                                    </li>
+                                    <li class="select__item">
+                                        Ngày Đăng
+                                    </li>
+                                    <li class="select__item">
+                                        Tên Phim
+                                    </li>
+                                    <li class="select__item">
+                                        Lượt Xem
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            <a class="select-filter__btn" href="#">
+                               Lọc Phim
+                            </a>
+                    </div>
+                    <div class="home-product">
+                    
+                        <div class="grid__row">
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-dau-pha-thuong-khung-phan-5/3641.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/dptk.jpg" alt="Đấu Phá Thương Khung" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Đấu Phá Thương Khung Phần 5</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 21/26 Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Fights Break Sphere 5 (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-tru-tien/3410.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/tru-tien.jpg" alt="Tru Tiên" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Tru Tiên</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 22/52 Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Jade Dynasty (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-vo-than-chua-te/3313.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vtct.png" alt="Võ Thần Chúa Tể" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Võ Thần Chúa Tể</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 289/384 Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Wu Shen Zhu Zai (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-vu-dong-can-khon-phan-3/3417.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vdck.jpg" alt="Vũ Động Càn Khôn Phần 3" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Vũ Động Càn Khôn Phần 3</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 12 Full HD Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Martial Universe 3 (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-thieu-nien-bach-ma-tuy-xuan-phong/3732.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/1657104874.jpg" alt="Thiếu Niên Bạch Mã Tuý Xuân Phong" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Thiếu Niên Bạch Mã Tuý Xuân Phong</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Trailer 11, Vs 10h 14/11</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng"> Shao Nian Bai Ma Zui Chun Feng (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-hung-su-thieu-nien/3405.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/hstn.jpg" alt="Hùng Sư Thiếu Niên" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Hùng Sư Thiếu Niên</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>HD Vietsub + TM</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">I Am What I Am (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-van-gioi-doc-ton/3312.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vgdt.jpg" alt="Vạn Giới Độc Tôn" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Vạn Giới Độc Tôn</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 86/162 VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Wan Jie Du Zun</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-hoang-nhan/3664.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/hoangnhan.jpg" alt="Hoang Nhan" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Hoang Nhan</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 16 Full HD VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Face On Lie (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-than-mo/3283.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/tm.png" alt="Thần Mộ" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Thần Mộ</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 16/16 Hết Phần</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Tomb Of Fallen Gods (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-than-lan-ky-vuc-vo-song-chau/3286.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/tlkvvsc.jpg" alt="Thần Lan Kỳ Vực Vô Song Châu" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Thần Lan Kỳ Vực Vô Song Châu</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 15/45 VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">The Land of Miracles (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-truyen-thuyet-yen-su/3894.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/ttys.jpg" alt="Truyền Thuyết Yển Sư" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Truyền Thuyết Yển Sư</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Trailer Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">The Legend Of Yanshi (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-pham-nhan-tu-tien/3839.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/pntt.jpg" alt="Phàm Nhân Tu Tiên" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Phàm Nhân Tu Tiên</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 72/72 VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Fan Ren Xiu Xian Zhuan (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-nghich-thien-chi-ton/3344.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/ntct.jpg" alt="Nghịch Thiên Chí Tôn" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Nghịch Thiên Chí Tôn</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 153/160 VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Ni Tian Zhi Zun (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-tuyet-ung-linh-chu-phan-3/3407.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/tulc.jpg" alt="Tuyết Ưng Linh Chủ Phần 3" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Tuyết Ưng Linh Chủ Phần 3</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 26/26 Full HD VietSub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Snow Eagle Lord 3 (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-tu-xuyen/3406.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/tx.jpg" alt="Tử Xuyên" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Tử Xuyên</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 42 Full HD Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Zi Chuan (2021)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-huyen-mong-son-hai-dao/3725.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/hmshd.jpg" alt="Huyễn Mộng Sơn Hải Dao" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Huyễn Mộng Sơn Hải Dao</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 15 Full HD Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Huan Meng Shan Hai Yao (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-vo-thuong-than-de/3318.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vttd.png" alt="Vô Thượng Thần Đế" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Vô Thượng Thần Đế</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 230/304 Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Wu Shang Shen Di (2020)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-gia-thien/3823.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/gt.jpg" alt="Già Thiên" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Già Thiên</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Trailer Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Zhe Tian (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-van-co-than-thoai/3837.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vctt.jpg" alt="Vạn Cổ Thần Thoại" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Vạn Cổ Thần Thoại</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 42/60 Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Wan Gu Shen Hua (2022)</h4>
+                            </div>
+                            <div class="grid__colum-2-4">
+                                <a href="https://hhpanda.tv/phim-van-gioi-chi-ton/3922.html" target="_blank" class="home-product-content">
+                                    <div class="home-product-item">
+                                        <div class="home-product-img">
+                                            <img src="./assets/img/vgct.jpg" alt="Vạn Giới Chí Tôn" class="home-product-item__img">
+                                        </div>
+                                            <h3 class="home-product-item__name">Vạn Giới Chí Tôn</h3>
+                                        <div class="home-poroduct-item__episode">
+                                            <span>Tập 13/.... Vietsub</span>
+                                        </div>
+                                        <div class="home-product__icon-play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>  
+                                    </div>
+                                </a>
+                                <h4 class="home-product-item__name-eng">Wan Jie Zhi Zun (2022)</h4>  
+                            </div>
+                    </div>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fa-solid fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination-item pagination-item__acctive">
+                            <a href="" class="pagination-item__link">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__colum-1">
+
+                </div>
+            </div>
+        </div>
+        
+            
+    </div>
+    <hr class="navbar_border" width="100%" size="0.5rem" align="center" color="white" />
+    <div class="footer">
+        <div class="grid footer__grid">
+            <div class="grid__row">
+                <div class="grid__colum-2">
+                    <div class="footer__header">
+                        <h3>Liên Hệ Với Chúng Tôi</h3>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="https://www.facebook.com/Bien.Van.250801" target="_blank">
+                                    Facebook
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.instagram.com/thangbien2508/" target="_blank">
+                                    Instagram
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                               <a href="https://twitter.com/BinVnB1" target="_blank">
+                                    Twitter
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum-2">
+                    <div class="footer__donate">
+                        <h3>Liên Hệ Donate</h3>
+                        <ul class="footer__donate-list">
+                            <li class="footer__donate-item">
+                                <span>
+                                    0867131635
+                                </span>
+                            </li>
+                            <li class="footer__donate-item">
+                                <span>
+                                    MB Bank
+                                </span>
+                            </li>
+                            <li class="footer__donate-item">
+                                <span>
+                                Văn Bá Biên
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__colum-8">
+                    <div class="footer__cover">
+                     <img class="cover__img" src="./assets/img/bia.png" alt="">
+                        <a href="https://www.facebook.com/hhpanda.tv" target="_blank" class="cover__fanpage-link">
+                            <ul class="cover__fanpage-link--list">
+                                    <li class="cover__fanpage-link--item">
+                                        <img src="./assets/img/panda.png" alt="" class="cover__avt">
+                                    </li>
+                                    <li class="cover__fanpage-link--item"> 
+                                        <h1>Hoạt Hình 3D Panda Fanpage</h1>
+                                    </li>                
+                            </ul>
+                        </a>
+                        <div class="share__fanpage">
+                            <div class="share__fanpage-item">
+                                <a class="fanpage__btn" href="https://www.facebook.com/hhpanda.tv" target="_blank">
+                                    <i class="fa-brands fa-square-facebook fanpage__btn-icon--fb"></i>
+                                    <span>Theo Dõi Trang</span>
+                                </a>
+                                <a class="fanpage__btn" href="https://www.facebook.com/hhpanda.tv" target="_blank">
+                                    <i class="fa-sharp fa-solid fa-share"></i>
+                                    <span>Share Fanpage</span>
+                                </a>
+                            </div>
+                       </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid"> 
+                <p class="footer__text">
+                    © Vietsub bởi Thằng Biên Subteam
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
